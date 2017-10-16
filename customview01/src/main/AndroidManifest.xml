@@ -21,7 +21,8 @@
         <activity android:name=".rectActivity" />
         <activity android:name=".ovalActivity" />
         <activity android:name=".roundActivity" />
-        <activity android:name=".circleArcActivity"/>
+        <activity android:name=".circleArcActivity" />
+        <activity android:name=".pieViewActivity"/>
     </application>
 
 </manifest>
