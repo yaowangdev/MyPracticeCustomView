@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:background="#fed255"
     android:layout_height="match_parent">
 
-    <com.yao.customview03.view.DrawTextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <com.yao.customview03.view.DemoView2
+        android:id="@+id/leaf_loading"
+        android:layout_width="302dp"
+        android:layout_height="61dp"
+        android:layout_centerInParent="true"
+        />
 
 </RelativeLayout>

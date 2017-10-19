@@ -12,6 +12,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 import com.yao.customview03.R;
@@ -59,7 +60,20 @@ public class DemoView1 extends View {
     }
 
     @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        Log.d("DemoView1","onMeasure");
+    }
+
+    @Override
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+        Log.d("DemoView1","onLayout");
+    }
+
+    @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        Log.d("DemoView1","onSizeChanged");
         mWidth = w;
         mHeight = h;
         sideLength = mBitmap.getHeight();
@@ -68,6 +82,7 @@ public class DemoView1 extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
+        Log.d("DemoView1","onDraw");
         canvas.translate(mWidth/2,mHeight/2);
         canvas.drawCircle(0,0,240,mPaint);
         Rect src = new Rect(sideLength*animCurrentPage,0,sideLength*(animCurrentPage+1),sideLength);
