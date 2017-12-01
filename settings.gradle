@@ -1,1 +1,1 @@
-include ':app', ':customview01', ':customview02', ':customview03', ':bazierpractice', 'customLibrary'
+include ':app', ':customview01', ':customview02', ':customview03', ':bazierpractice', ':pathmeasure', 'customLibrary'
